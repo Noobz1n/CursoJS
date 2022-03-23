@@ -11,6 +11,9 @@
             color: white;
             font: normal 18pt Arial;
         }
+        h1 {
+            color: firebrick;
+        }
         p {
             color: firebrick;
             font: normal 17pt Arial;
@@ -25,10 +28,10 @@
     <h1>Hello, world!</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p> 
-    <div id="aprendendo">Clique em mim</div>
+    <div id="aprendendo">teste</div>
     <script>
-        var d = document.body
-        d.style.color = 'Green'
+        var d = document.getElementsByTagName('p')[0]
+        d.style.color = 'red'
         var aid = document.getElementById('aprendendo')
         aid.style.background = 'green'
     </script>
